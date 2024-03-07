@@ -143,6 +143,9 @@ function Home() {
         // Pass animeList as state when navigating to ViewerStats
         navigate('/viewer-stats', { state: { animeList: animeList } });
     }
+    function goToSearchPage() {
+        navigate('/search');
+    }
 
     return (
         <Container>
@@ -150,6 +153,7 @@ function Home() {
         <h1>Welcome to the Home Page!</h1>
         {/* Use a button to navigate to ViewerStats */}
         <Button onClick={goToViewerStats}>Go to Viewer Stats</Button>
+        <Button onClick={goToSearchPage}>Go to Search Page</Button>
 
         {/* Search bar for new anime */}
         <div>
